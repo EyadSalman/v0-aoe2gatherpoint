@@ -3,6 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { ExternalLink, Users, Calendar, Trophy, Zap, Heart } from "lucide-react"
 import Link from "next/link"
 
@@ -53,6 +54,10 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative py-20 px-4">
         <div className="container mx-auto text-center">
+          <div className="absolute top-4 right-4">
+            <ThemeToggle />
+          </div>
+
           <div className="mx-auto max-w-4xl">
             <h1 className="text-4xl font-bold tracking-tight text-balance sm:text-6xl">
               Welcome to <span className="text-primary">Aoe2 GatherPoint</span>
